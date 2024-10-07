@@ -1,5 +1,9 @@
 Hospital Booking System Management API 🏥
+
+
 Project Overview
+
+
 The Hospital Booking System Management API is a comprehensive web-based system that facilitates seamless interactions between patients, doctors, and admins. Built using REST API architecture, it offers a wide range of functionality including patient appointments, doctor management, and system-wide administrative control. The system ensures smooth operation with role-based access, allowing patients to book appointments, doctors to manage their schedules, and an overall admin to have full control over doctor accounts and system data.
 
 Features
