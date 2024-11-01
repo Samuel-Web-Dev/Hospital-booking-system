@@ -406,7 +406,9 @@ exports.getPatients = (req, res, next) => {
 
 exports.get_doctor_patients = (req, res, next) => {
   const doctorName = req.query.name
-  AppointmentData.find({doctor: doctorName}).populate('creator').then((appointments) => {
+  const doctorId = req.params.doctorId
+
+  AppointmentData.find({doctor: doctorId}).populate('creator').then((appointments) => {
      console.log(appointments)
      if(!appointments) {
       const error = new Error("Appointment not found");

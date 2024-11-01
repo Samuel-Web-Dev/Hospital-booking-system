@@ -20,6 +20,10 @@ const timingSchema = new Schema({
     endTime: {
         type: Number,
         required: true
+    },
+    creator: {
+      type: Schema.Types.ObjectId,
+      required: true  
     }
 })
 

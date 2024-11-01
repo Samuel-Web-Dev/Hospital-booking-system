@@ -247,7 +247,8 @@ exports.createTiming = (req, res, next) => {
         day: day,
         shift: shift,
         startTime: startTime,
-        endTime: endTime
+        endTime: endTime,
+        creator: req.user._id
        })
        timing.save().then((time) => {
          return res.json({message: 'Timing Created Successfully', timing: time})

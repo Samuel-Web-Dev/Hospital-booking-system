@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const appointmentDataSchema = new Schema({
     doctor: {
-        type: String,
+        type: Schema.Types.ObjectId,
         required: true,
     },
     reason: {
