@@ -74,7 +74,7 @@ app.use((error, req, res, next) => {
 })
 
 
-mongoose.connect(`mongodb+srv://${USERNAME}:${PASSWORD}@first-project.y8uqnxq.mongodb.net/${DATABASE_NAME}?retryWrites=true&w=majority&appName=first-project`).then(() =>{
+mongoose.connect(`mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@first-project.y8uqnxq.mongodb.net/${process.env.DATABASE_NAME}?retryWrites=true&w=majority&appName=first-project`).then(() =>{
     console.log('Database connected successfully')
     app.listen(8080)
 }).catch(err => {

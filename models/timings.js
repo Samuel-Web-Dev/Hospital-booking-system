@@ -14,11 +14,11 @@ const timingSchema = new Schema({
         required: true
     },
     startTime: {
-        type: Number,
+        type: Number, // Still Making changes to it later
         required: true
     },
     endTime: {
-        type: Number,
+        type: Number, // Still Making changes to it later
         required: true
     },
     creator: {
